@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 50px auto;
+}
+.list-product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-item {
+  display: block;
+  position: relative;
+  width: 19.6%;
+  text-decoration: none;
+}
+.product-item:hover > p {
+  color: rgb(5, 112, 184);
+}
+.product-item img {
+  max-width: 100%;
+}
+.product-item span {
+  position: absolute;
+  background-color: #f28902;
+  color: #fff;
+  border-radius: 2px;
+  padding: 0px 4px;
+  left: 0;
+  bottom: 71px;
+}
+.product-item p {
+  padding: 5px;
+  color: rgb(29, 28, 28);
+  transition: all 0.3s;
+}
+.product-item p:last-child {
+  color: rgb(250, 35, 35);
+  font-weight: bold;
+}

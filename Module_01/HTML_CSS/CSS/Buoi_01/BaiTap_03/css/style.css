@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  width: 700px;
+  margin: 20px auto;
+}
+.menu-vertical {
+  background-color: #aad862;
+  width: 200px;
+}
+.menu-vertical .menu {
+  list-style-type: none;
+}
+.menu-vertical .menu .menu-item {
+  position: relative;
+}
+.menu-vertical .menu .menu-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 20px;
+  background-image: url(../images/menuDot.gif);
+  background-position: 10px;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  border-bottom: 1px solid #6aac29;
+}
+.menu-vertical .menu .menu-item:hover > .menu-link {
+  background-color: #6aac29;
+  color: #fff;
+}
+.menu .menusub {
+  position: absolute;
+  background-color: #6aac29;
+  top: 0;
+  left: 110%;
+  width: 200px;
+  list-style-type: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+.menu-vertical .menusub .menusub-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 8px 20px;
+  border-bottom: 1px solid #aad862;
+  transition: all 0.2s;
+}
+.menu-vertical .menu-item:hover .menusub {
+  opacity: 1;
+  pointer-events: auto;
+  left: 100%;
+}
+.menu-vertical .menusub .menusub-item:hover > .menusub-link {
+  color: #fff;
+}

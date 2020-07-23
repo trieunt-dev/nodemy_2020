@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #495057;
+}
+
+.wrapper {
+  margin-top: 40px;
+}
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-login .label-control {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+.form-login input.form-control {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: 1px solid #9c9999;
+  border-radius: 4px;
+}
+.form-login input.form-control:focus {
+  outline: 0;
+}
+.form-login .forget-form {
+  font-size: 14px;
+  text-align: right;
+}
+.form-login .forget-form a:first-child {
+  display: block;
+  margin: 5px 0;
+}
+.form-login .forget-form a {
+  text-decoration: none;
+  color: rgb(53, 147, 255);
+}
+.form-login .forget-form span {
+  padding-right: 4px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  margin: 20px 0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-login {
+  background-color: rgb(53, 147, 255);
+}
+.btn-facebook {
+  background-color: rgb(47, 98, 240);
+}
+.btn-facebook > i {
+  padding-right: 6px;
+  font-size: 12px;
+}
+.form-login > p {
+  text-align: center;
+  font-weight: bold;
+}
